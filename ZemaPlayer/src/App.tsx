@@ -3,10 +3,14 @@ import Main from "./components/Main";
 import logo from "./assets/logo.png";
 import PlayerBackground from "./assets/PlayerBackground.webp";
 
+// For TypeScript, declare imported images (if not already in a .d.ts file)
+// declare module "*.png";
+// declare module "*.webp";
+
 const App: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-slate-50 via-blue-50 to-indigo-100 text-gray-900 font-sans">
-      
+
       {/* Header */}
       <header className="backdrop-blur-md bg-white/70 border-b border-gray-200 py-3 px-4 sm:py-4 sm:px-8 flex justify-center items-center sticky top-0 z-50 shadow-sm">
         <img
